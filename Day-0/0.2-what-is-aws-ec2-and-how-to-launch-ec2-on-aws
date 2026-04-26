@@ -1,0 +1,58 @@
+# What is AWS EC2 and How to Launch EC2 on AWS
+
+## What is AWS EC2?
+Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. With EC2, you can launch virtual servers, configure security and networking, and manage storage.
+
+### Key Features of EC2:
+- **Scalability**: Scale up or down based on demand.
+- **Flexibility**: Choose from a variety of instance types and operating systems.
+- **Cost-Effective**: Pay only for the compute time you use.
+- **Secure**: Integrated with AWS security services.
+
+---
+
+## How to Launch an EC2 Instance on AWS
+
+### Step 1: Log in to AWS Management Console
+1. Go to [AWS Management Console](https://aws.amazon.com/console/).
+2. Log in with your AWS account credentials.
+
+### Step 2: Navigate to EC2 Dashboard
+1. Search for "EC2" in the AWS services search bar.
+2. Click on "EC2" to open the EC2 Dashboard.
+
+### Step 3: Launch an Instance
+1. Click on the "Launch Instance" button.
+2. Provide a name for your instance.
+
+### Step 4: Choose an Amazon Machine Image (AMI)
+1. Select an AMI based on your requirements (e.g., Amazon Linux, Ubuntu, Windows).
+
+### Step 5: Choose an Instance Type
+1. Select an instance type based on your compute needs (e.g., t2.micro for free tier).
+
+### Step 6: Configure Instance Details
+1. Specify the number of instances.
+2. Configure networking settings (e.g., VPC, Subnet).
+
+### Step 7: Add Storage
+1. Specify the storage size and type (e.g., 8 GiB General Purpose SSD).
+
+### Step 8: Add Tags (Optional)
+1. Add tags to organize your resources (e.g., Name: MyEC2Instance).
+
+### Step 9: Configure Security Group
+1. Create or select a security group.
+2. Define inbound rules (e.g., allow SSH on port 22).
+
+### Step 10: Review and Launch
+1. Review your configuration.
+2. Click "Launch" and select or create a key pair for SSH access.
+
+### Step 11: Access Your Instance
+1. Use the public IP address or DNS name to connect to your instance via SSH.
+
+---
+
+## Conclusion
+AWS EC2 provides a flexible and scalable way to deploy virtual servers in the cloud. By following the steps above, you can easily launch and manage an EC2 instance on AWS.
