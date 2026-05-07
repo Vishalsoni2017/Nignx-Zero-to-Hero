@@ -1,0 +1,46 @@
+    Steps to add reverse proxy on nginx server
+
+    0. Install node 
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash &&
+        source ~/.bashrc &&
+        nvm install --lts &&
+        node -v
+
+
+    1.# Create site folders
+        sudo mkdir -p /var/www/site1 /var/www/site1.unemployengineer.works //your-website-name
+
+        add code using github repo practical-code-2 on Day-10
+
+        change owner cmd
+        sudo chown www-data:www-data -R /var/wwww/site1.unemployengineer.works //your-website-name
+
+    2. # Create site config
+        sudo nano /etc/nginx/sites-available/site1.unemployengineer.works //your-website-name
+
+    3. Add server block
+        server {
+        listen 80;
+        server_name unemployengineer.works www.unemployengineer.works;
+        
+        location / {
+        proxy_pass http://localhost:3000; 
+        proxy_set_header Host $host;  #tells backend which website user asked for
+        proxy_set_header X-Real-IP $remote_addr; #tells who the user is
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; #shows full journey (who passed the request) all IPs in the chain (user → proxies → server)
+        }
+
+
+        error_log /var/log/nginx/site1.unemployengineer.works_error_log.log;
+        access_log /var/log/nginx/site1.unemployengineer.works_access_log.log;
+
+        }
+
+
+    4. # Enable site
+        sudo ln -s /etc/nginx/sites-available/unemployengineer.works /etc/nginx/sites-enabled/   
+        
+    5. Reload and test
+    sudo nginx -t && sudo systemctl reload nginx
+
+    5. add extra X-Forwarded-Proto $scheme (help is http & https)

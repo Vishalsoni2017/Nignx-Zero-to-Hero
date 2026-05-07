@@ -1,0 +1,42 @@
+Rate limit and Connection limit
+1
+# In nginx.conf http block:
+    limit_req_zone $binary_remote_addr zone=api_limit:10m rate=5r/s;
+    limit_conn_zone $binary_remote_addr zone=conn_limit:10m;
+
+# Apply in location:
+    location / {
+    limit_req zone=api_limit burst=10 nodelay;
+    limit_conn conn_limit 2;
+    proxy_pass http://backend_servers;
+    }
+
+Explanation:
+    1. limit_req_zone
+        Purpose: Defines a shared memory zone for request rate limiting.
+        Key Variables:
+            $binary_remote_addr: Represents the binary-encoded IP address of the client. This is used to uniquely identify clients.
+            zone=api_limit:10m: Creates a shared memory zone named api_limit with a size of 10MB. This zone stores the state for rate limiting.
+            rate=5r/s: Sets the rate limit to 5 requests per second per client.
+2. limit_conn_zone
+        Purpose: Defines a shared memory zone for connection limiting.
+        Key Variables:
+            $binary_remote_addr: Again, identifies clients by their IP address.
+            zone=conn_limit:10m: Creates a shared memory zone named conn_limit with a size of 10MB. This zone stores the state for connection limiting.
+3. location / block
+        Purpose: Applies the rate and connection limits to the / location (root path).
+        Key Directives:
+            limit_req zone=api_limit burst=10 nodelay;
+            zone=api_limit: Specifies the rate-limiting zone to use.
+            burst=10: Allows up to 10 requests to exceed the rate limit temporarily (burst requests).
+            nodelay: Ensures that requests exceeding the rate limit are processed immediately if within the burst limit.
+            limit_conn conn_limit 2;
+            conn_limit: Specifies the connection-limiting zone to use.
+
+2: Limits the number of simultaneous connections per client to 2.
+    proxy_pass http://backend_servers;
+    Forwards requests to the backend servers.
+    
+Notes:
+Replace http://backend_servers with the actual backend server address or upstream configuration.
+Ensure the nginx.conf file is valid by testing it with nginx -t in the terminal before reloading the configuration.

@@ -1,0 +1,31 @@
+Steps to add new local server website on nginx server
+1.# Create site folders
+    sudo mkdir -p /var/www/site1 /var/www/unemployengineer.works //your-website-name
+
+    add code using github repo practical-code-1
+
+    change owner cmd
+    sudo chown www-data:www-data -R /var/wwww/unemployengineer.works //your-website-name
+
+2. # Create site config
+    sudo nano /etc/nginx/sites-available/unemployengineer.works //your-website-name
+
+3. Add server block
+    server {
+    listen 80;
+    server_name unemployengineer.works www.unemployengineer.works;
+    root /var/www/unemployengineer.works;
+    index index.html;
+
+    error_log /var/log/nginx/unemployengineer.works_error_log.log;
+    access_log /var/log/nginx/unemployengineer.works_access_log.log;
+
+    }
+
+
+4. # Enable site
+    sudo ln -s /etc/nginx/sites-available/unemployengineer.works /etc/nginx/sites-enabled/   
+    
+5. Reload and test
+sudo nginx -t && sudo systemctl reload nginx
+

@@ -1,0 +1,8 @@
+
+# add module 
+sudo apt install libnginx-mod-http-headers-more-filter -y
+
+
+# update nginx.conf file
+
+more_set_headers 'Server: Private';

@@ -1,0 +1,16 @@
+# This script is used to install and manage the Nginx web server on a Linux system.
+
+# Update the package list and install Nginx
+sudo apt update && sudo apt install nginx -y  
+
+# Start the Nginx service
+sudo systemctl start nginx 
+
+# Stop the Nginx service
+sudo systemctl stop nginx 
+
+# Check the status of the Nginx service
+sudo systemctl status nginx
+
+# Enable Nginx to start on boot
+sudo systemctl enable nginx 

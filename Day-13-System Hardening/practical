@@ -1,0 +1,14 @@
+Create two pages:
+page1.html
+
+<a href="http://domain2.unemployengineer.works/page2.html">Go</a>
+
+
+page2.html (log referrer)
+<script>
+    console.log(document.referrer);
+    </script>
+
+👉 Based on policy:
+
+You’ll see full URL / domain / nothing

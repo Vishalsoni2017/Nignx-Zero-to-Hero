@@ -1,0 +1,33 @@
+# SSL (Secure Sockets Layer) is a standard security technology for establishing an encrypted link between a server and a client—typically a web server (website) and a browser, or a mail server and a mail client. It ensures that all data passed between them remains private and secure.
+
+
+👨‍💻 Browser Sends {Certificate| (Public Key 🔓)]
+	 ->	 Request https://unemployengineer.works	
+👨‍💻 Browser ->	Internet (Encrypted Data) [Encrypt Data using Public Key 🔒] ->	
+    🖥️ Server [Decrypt using Private Key 🔐]
+
+			
+
+
+
+# To add SSL to your Nginx configuration, you can use the following steps:
+
+# 1. Install Certbot and the Nginx plugin:
+sudo apt install certbot python3-certbot-nginx -y
+
+# 2. Obtain an SSL certificate for your domain:
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+
+# 3. Certbot will automatically configure SSL in your Nginx configuration. It will add the following lines:
+listen 443 ssl;
+ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+
+# 4. Redirect HTTP to HTTPS by adding this server block:
+server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com;
+    return 301 https://$host$request_uri;
+}
+
+# Replace 'yourdomain.com' with your actual domain name.

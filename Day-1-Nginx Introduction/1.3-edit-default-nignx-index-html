@@ -1,0 +1,21 @@
+# Remove the default Nginx index file
+sudo rm -rf index.nginx-debian.html
+# This command deletes the default Nginx index file. Use it cautiously as it permanently removes the file.
+
+# Open a new file named index.html in the vi editor
+sudo vi index.html
+# In the vi editor:
+# - Press 'i' to enter insert mode and start editing the file.
+# - After editing, press 'Esc' to exit insert mode.
+# - Type ':wq' and press Enter to save and exit the file.
+
+# Alternatively, open the file in the nano editor
+sudo nano index.html
+# In the nano editor:
+# - Start typing to edit the file.
+# - Press 'Ctrl+O' to save the file, then press Enter to confirm.
+# - Press 'Ctrl+X' to exit the editor.
+
+# Reload the Nginx service to apply changes
+sudo service nginx reload
+# This command reloads the Nginx configuration and applies the changes without restarting the service.

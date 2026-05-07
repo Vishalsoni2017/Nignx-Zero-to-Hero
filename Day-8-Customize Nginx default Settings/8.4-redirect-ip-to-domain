@@ -1,0 +1,11 @@
+
+
+# add line in defalt nginx conf file
+
+server { 
+    listen 80; 
+    server_name _; 
+    return 301 https://www.unemployengineer.works/;
+    
+    }
+

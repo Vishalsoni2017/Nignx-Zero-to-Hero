@@ -1,0 +1,39 @@
+1. create 2 subdomain mine is student.unemployengineer.works frontend and api.unemployengineer.works for backend
+2. create website dir and clone code
+3. install mysql server 
+    sudo apt install mysql-server -y
+    create database student_app;
+    create user 'admin'@'localhost' identified by 'admin';
+    grant all privileges on *.* to 'admin'@'localhost';
+    flush privileges;
+
+4. create table and add row data;
+5. ready frontend app 
+    create config file;
+    add symblic
+    create ssl 
+6.ready both backend 
+    sudo chown ubuntu:ubuntu -R api.unemployengineer.works
+    npm install
+    add .env
+    npm install pm2@latest -g
+    pm2 start npm --name "auth-service" -- start
+7.create api.unemployengineer.works web config file
+    add symblic
+    create ssl 
+8. fix csp header add connect-src 'self' https://api.unemployengineer.works;
+    controls where your frontend is allowed to make network requests.
+9. fixing CORS errors
+
+What is preflight request?”
+A preflight request is an HTTP OPTIONS request sent by the browser before certain
+cross-origin requests to check if the server allows the actual request based on method, headers, and origin.
+
+ # ✅ HANDLE PREFLIGHT
+    if ($request_method = OPTIONS) {
+        add_header Access-Control-Allow-Origin "https://student.unemployengineer.works";
+        add_header Access-Control-Allow-Credentials "true";
+        add_header Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS";
+        add_header Access-Control-Allow-Headers "Content-Type, Authorization";
+        return 204;
+    }

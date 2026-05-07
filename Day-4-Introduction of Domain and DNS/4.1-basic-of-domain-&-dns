@@ -1,0 +1,46 @@
+A domain is a human-readable address used to identify a website or resource on the internet. For example, unemployengineer.works is a domain. Domains are part of the Domain Name System (DNS), which translates these human-readable names into IP addresses that computers use to locate each other.
+
+Explanation of Terms:
+Root Domain:
+    The root domain is the highest level of a domain name. In your example, unemployengineer.works is the root domain. It consists of:
+    Second-level domain (SLD): unemployengineer
+    Top-level domain (TLD): .works
+
+Subdomain:
+A subdomain is a prefix added to the root domain to create a separate section or environment of the website. For example:
+    site1.stage.unemployengineer.works is a subdomain of unemployengineer.works.
+
+Here:
+site1 and stage are subdomains.
+unemployengineer.works is the root domain.
+
+Hierarchy Breakdown:
+
+Root Domain: unemployengineer.works
+Subdomain: site1.stage.unemployengineer.works
+site1 is a sub-subdomain of stage.unemployengineer.works.
+stage is a subdomain of unemployengineer.works.
+
+Why Use Subdomains?
+Subdomains are often used to organize different sections of a website or to create staging environments. For example:
+stage.unemployengineer.works could be a staging environment for testing.
+
+site1.stage.unemployengineer.works could be a specific site or application within the staging environment.
+
+Record Types: A and CNAME
+
+A Record:
+An A (Address) record maps a domain name to an IPv4 address. It is used to point a domain or subdomain to the IP address of the server hosting the website or resource.
+
+Example:
+unemployengineer.works -> 192.168.1.1
+
+CNAME Record:
+A CNAME (Canonical Name) record maps a domain name to another domain name. It is used to alias one domain to another, allowing you to point multiple domains or subdomains to the same destination.
+
+Example:
+www.unemployengineer.works -> unemployengineer.works
+site1.stage.unemployengineer.works -> stage.unemployengineer.works
+
+
+

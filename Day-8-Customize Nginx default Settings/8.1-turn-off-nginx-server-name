@@ -1,0 +1,5 @@
+uncommnet the line
+
+server_tokens off ;
+
+on nginx.conf file present in nginx.conf file

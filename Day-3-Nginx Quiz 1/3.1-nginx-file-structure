@@ -1,0 +1,6 @@
+/etc/nginx/nginx.conf	# Main config
+/etc/nginx/sites-available/	# All site configs
+/etc/nginx/sites-enabled/	# Active site configs (symlinks)
+/var/www/html/	# Default web root
+/var/log/nginx/access.log	# Access logs
+/var/log/nginx/error.log	# Error logs

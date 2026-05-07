@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> MyStory Modern Personal Portfolio HTML5 Template </title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="MyStory Modern Personal Portfolio HTML5 Template" />
+
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-all.css" />
+    <link rel="stylesheet" href="assets/css/jarallax.css" />
+    <link rel="stylesheet" href="assets/css/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <!--Start Preloader-->
+    <div class="loader js-preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--End Preloader-->
+
+
+
+    <div class="chat-icon"><button type="button" class="chat-toggler"><i class="fa fa-comment"></i></button></div>
+    <!--Chat Popup-->
+    <div id="chat-popup" class="chat-popup">
+        <div class="popup-inner">
+            <div class="close-chat"><i class="fa fa-times"></i></div>
+            <div class="chat-form">
+                <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+                <form action="assets/inc/sendemail.php" method="POST" class="contact-form-validated">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Text" required></textarea>
+                    </div>
+                    <div class="form-group message-btn">
+                        <button type="submit" class="thm-btn">
+                            <span>Submit Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Start sidebar widget content -->
+    <div class="xs-sidebar-group info-group info-sidebar">
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+                <div class="widget-heading">
+                    <a href="#" class="close-side-widget">X</a>
+                </div>
+                <div class="sidebar-textwidget">
+                    <div class="sidebar-info-contents">
+                        <div class="content-inner">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/resources/logo-2.png" alt="" /></a>
+                            </div>
+                            <div class="content-box">
+                                <h4>About Us</h4>
+                                <div class="inner-text">
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                        roots in a piece of classical Latin literature from 45 BC, making it over
+                                        2000 years old.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-inner">
+                                <h4>Get a free quote</h4>
+                                <form action="assets/inc/sendemail.php" method="POST" class="contact-form-validated">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Name" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" placeholder="Message..." required=""></textarea>
+                                    </div>
+                                    <div class="form-group message-btn">
+                                        <button class="thm-btn" data-text="Submit Now" type="submit"
+                                            data-loading-text="Please wait...">
+                                            <span>Submit Now</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                    <div class="result"></div>
+                                </form>
+                            </div>
+
+                            <div class="sidebar-contact-info">
+                                <h4>Contact Info</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="icon-location"></span> 88 broklyn street, New York
+                                    </li>
+                                    <li>
+                                        <span class="icon-call"></span>
+                                        <a href="tel:123456789">+1 555-9990-153</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-envelope"></span>
+                                        <a href="mailto:info@example.com">info@example.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="thm-social-link1">
+                                <ul class="social-box list-unstyled">
+                                    <li>
+                                        <a href="#"><i class="icon-facebook-app-symbol" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icon-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icon-linkedin" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icon-pinterest" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End sidebar widget content -->
+
+
+    <div class="page-wrapper">
+        <header class="main-header">
+            <nav class="main-menu">
+                <div class="main-menu__wrapper">
+                    <div class="container">
+                        <div class="main-menu__wrapper-inner">
+                            <div class="main-header__left">
+                                <div class="main-menu__logo-style1">
+                                    <a href="index.html">
+                                        <img src="assets/images/resources/logo-1.png" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-header__middle">
+                                <div class="main-menu__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <ul class="main-menu__list">
+                                        <li class="dropdown">
+                                            <a href="#">Home </a>
+                                            <ul>
+                                                <li class="dropdown">
+                                                    <a href="#">Multi Page</a>
+                                                    <ul>
+                                                        <li><a href="index.html">Home Dark</a></li>
+                                                        <li><a href="index-light.html">Home Light</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#">One Page</a>
+                                                    <ul>
+                                                        <li><a href="index-one-page.html">Home Dark</a></li>
+                                                        <li><a href="index-one-page-light.html">Home Light</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Pages</a>
+                                            <ul>
+                                                <li><a href="projects.html">Projects</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">services</a>
+                                            <ul>
+                                                <li><a href="services.html">Services</a></li>
+                                                <li><a href="services-details.html">Service Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-header__right">
+                                <div class="main-menu__search-style1">
+                                    <a href="#" class="searcher-toggler-box icon-search-interface-symbol"></a>
+                                </div>
+                                <div class="main-menu__nav-sidebar-icon">
+                                    <a class="navSidebar-button" href="#">
+                                        <i class="icon-text"></i>
+                                    </a>
+                                </div>
+                                <div class="main-menu__btn-style1">
+                                    <a href="about.html" class="thm-btn">
+                                        <span> Let’s Start</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+
+
+        <!-- Banner One Start -->
+        <section class="banner-one">
+            <div class="banner-one__shape"></div>
+            <div class="banner-one__bg1"
+                style="background-image: url(assets/images/pattern/banner-one-bg-pattern.jpg);">
+            </div>
+            <div class="container">
+                <div class="banner-one__inner">
+                    <div class="banner-one__content wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="banner-one__content-sub-title">
+                            <h4>My Digital Space</h4>
+                        </div>
+                        <div class="banner-one__content-title">
+                            <h2><span>NULLPHPSCRIPT.COM </span><br> Full Stack Developer</h2>
+                        </div>
+                        <div class="banner-one__content-text">
+                            <p>
+                                A passionate Web Developer crafting modern and responsive websites.
+                                I turn ideas into interactive digital experiences.
+                            </p>
+                        </div>
+                        <ul class="banner-one__content-list list-unstyled">
+                            <li>
+                                <span>Phone :</span>
+                                <p><a href="tel:009211085413">+00 (92110) 85413</a></p>
+                            </li>
+                            <li>
+                                <span>Email :</span>
+                                <p><a href="mailto:maya.patel@creative.com">Alex.patel@creative.com</a></p>
+                            </li>
+                            <li class="last">
+                                <span>Address :</span>
+                                <p>house number, street, and city</p>
+                            </li>
+                        </ul>
+                        <div class="banner-one__content-btn">
+                            <a href="contact.html" class="thm-btn">
+                                <span>Hire Me</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-one__img">
+                <div class="banner-one__img-shape"></div>
+                <div class="banner-one__img-bg"
+                    style="background-image: url(assets/images/pattern/banner-one-bg-pattern-right.jpg);">
+                </div>
+                <div class="banner-one__img-inner wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                    <img src="assets/images/resources/banner-v1-1.png" alt="Image">
+                </div>
+                <div class="banner-one__shape-one"
+                    style="background-image: url(assets/images/shapes/banner-one-shape-1.gif);"></div>
+            </div>
+            <ul class="banner-one__social list-unstyled">
+                <li>
+                    <a href="#"><i class="icon-facebook-app-symbol"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-pinterest"></i></a>
+                </li>
+            </ul>
+        </section>
+        <!--Banner One End -->
+
+        <!-- Start Scroling Text One -->
+        <section class="scroling-text-one">
+            <div class="scroling-text-one__wrap">
+                <ul class="scroling-text-one__list list-unstyled marquee_mode">
+                    <li>
+                        <div class="scroling-text-one__inner">
+                            <img src="assets/images/icon/star1.png" alt="Icon">
+                            <h2>Branding</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scroling-text-one__inner">
+                            <img src="assets/images/icon/star1.png" alt="Icon">
+                            <h2>UI/UX Design</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scroling-text-one__inner">
+                            <img src="assets/images/icon/star1.png" alt="Icon">
+                            <h2>App Design</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scroling-text-one__inner">
+                            <img src="assets/images/icon/star1.png" alt="Icon">
+                            <h2>Landing Page</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scroling-text-one__inner">
+                            <img src="assets/images/icon/star1.png" alt="Icon">
+                            <h2>Wireframing</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End Scroling Text One -->
+
+        <!-- Start About One -->
+        <section class="about-one">
+            <div class="about-one__shape"></div>
+            <div class="about-one__shape2"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="about-one__img1">
+                            <div class="about-one__img1-inner">
+                                <img src="assets/images/resources/about-v1-1.jpg" alt="Image">
+                            </div>
+                            <div class="about-one__img1-content">
+                                <div class="about-one__img1-content-count">
+                                    <h2 class="odometer" data-count="99">00</h2>
+                                    <span>+</span>
+                                </div>
+                                <h3>Our Happy <br>Clients</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="100ms">
+                        <div class="about-one__img2">
+                            <div class="about-one__img2-content">
+                                <div class="about-one__img2-content-count">
+                                    <h2 class="odometer" data-count="15">00</h2>
+                                    <span>k</span>
+                                </div>
+                                <h3>Project <br>Completed</h3>
+                            </div>
+                            <div class="about-one__img2-inner">
+                                <img src="assets/images/resources/about-v1-2.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="about-one__content">
+                            <div class="section-title">
+                                <div class="section-title__tagline">
+                                    <p>About Us</p>
+                                    <div class="line2"></div>
+                                </div>
+                                <h2 class="section-title__title">Who Am I ?</h2>
+                            </div>
+                            <div class="about-one__content-title">
+                                <H5>
+                                    I’m [Your Name], a creative web developer driven by design and inspired by
+                                    technology. I specialize in building modern, responsive, and engaging digital
+                                    experiences that tell stories and connect with people.
+                                </H5>
+                            </div>
+                            <div class="about-one__content-text">
+                                <ul>
+                                    <li>
+                                        <span>Name</span>: Ronaldo Fredrickson
+                                    </li>
+                                    <li>
+                                        <span>Date of birth</span>: November 28, 1989
+                                    </li>
+                                    <li>
+                                        <span>Address:</span>: San Francisco CA 97987 USA
+                                    </li>
+                                    <li>
+                                        <span>Zip code</span>: 1000
+                                    </li>
+                                    <li>
+                                        <span>Email</span>:
+                                        <a href="mailto:maya.patel@creative.com">maya.patel@creative.com</a>
+                                    </li>
+                                    <li>
+                                        <span>Phone</span>: <a href="tel:009211085413">+00 (92110) 85413</a>
+                                    </li>
+                                    <li>
+                                        <span>Language</span>: English, Germanic
+                                    </li>
+                                    <li>
+                                        <span>Freelance</span>: Available
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="about-one__content-btn">
+                                <a href="about.html" class="thm-btn">
+                                    <span>Download Cv</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About One -->
+
+        <!--Start Services One-->
+        <section class="services-one">
+            <div class="container">
+                <div class="services-one__top">
+                    <div class="section-title">
+                        <div class="section-title__tagline">
+                            <p>Our Services</p>
+                            <div class="line2"></div>
+                        </div>
+                        <h2 class="section-title__title">The Ease-Service Process</h2>
+                    </div>
+                    <div class="services-one__top-btn">
+                        <a href="services.html" class="thm-btn">
+                            <span>View All Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Start Services One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="services-one__single">
+                            <div class="services-one__single-icon">
+                                <i class="icon-web-design"></i>
+                            </div>
+                            <div class="services-one__single-content">
+                                <div class="services-one__single-text">
+                                    <h4><a href="services-details.html">UI/UX Design</a></h4>
+                                    <p>I design modern and user-friendly mobile app interfaces that deliver seamless
+                                        experiences.</p>
+                                </div>
+                                <div class="services-one__single-btn">
+                                    <a href="services-details.html" class="thm-btn">
+                                        <span>View Services</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Services One Single -->
+                    <!-- Start Services One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="services-one__single">
+                            <div class="services-one__single-icon">
+                                <i class="icon-branding"></i>
+                            </div>
+                            <div class="services-one__single-content">
+                                <div class="services-one__single-text">
+                                    <h4><a href="services-details.html">Brand Identity Design</a></h4>
+                                    <p>I craft unique brand identities that capture your vision and connect with
+                                        your audience.</p>
+                                </div>
+                                <div class="services-one__single-btn">
+                                    <a href="services-details.html" class="thm-btn">
+                                        <span>View Services</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Services One Single -->
+                    <!-- Start Services One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="services-one__single">
+                            <div class="services-one__single-icon">
+                                <i class="icon-user-experience"></i>
+                            </div>
+                            <div class="services-one__single-content">
+                                <div class="services-one__single-text">
+                                    <h4><a href="services-details.html">Mobile App Design</a></h4>
+                                    <p>I design modern and user-friendly mobile app interfaces that deliver seamless
+                                        experiences.</p>
+                                </div>
+                                <div class="services-one__single-btn">
+                                    <a href="services-details.html" class="thm-btn">
+                                        <span>View Services</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Services One Single -->
+                    <!-- Start Services One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="services-one__single">
+                            <div class="services-one__single-icon">
+                                <i class="icon-front-end-programming"></i>
+                            </div>
+                            <div class="services-one__single-content">
+                                <div class="services-one__single-text">
+                                    <h4><a href="services-details.html">Web Design</a></h4>
+                                    <p>I craft unique brand identities that capture your vision and connect with
+                                        your audience.</p>
+                                </div>
+                                <div class="services-one__single-btn">
+                                    <a href="services-details.html" class="thm-btn">
+                                        <span>View Services</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Services One Single -->
+                    <!-- Start Services One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="services-one__single">
+                            <div class="services-one__single-icon">
+                                <i class="icon-briefcase"></i>
+                            </div>
+                            <div class="services-one__single-content">
+                                <div class="services-one__single-text">
+                                    <h4><a href="services-details.html">Digital Product</a></h4>
+                                    <p>I design modern and user-friendly mobile app interfaces that deliver seamless
+                                        experiences.</p>
+                                </div>
+                                <div class="services-one__single-btn">
+                                    <a href="services-details.html" class="thm-btn">
+                                        <span>View Services</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Services One Single -->
+                    <!-- Start Services One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
+                        <div class="services-one__single">
+                            <div class="services-one__single-icon">
+                                <i class="icon-content"></i>
+                            </div>
+                            <div class="services-one__single-content">
+                                <div class="services-one__single-text">
+                                    <h4><a href="services-details.html">Content Writing</a></h4>
+                                    <p>I design modern and user-friendly mobile app interfaces that deliver seamless
+                                        experiences.</p>
+                                </div>
+                                <div class="services-one__single-btn">
+                                    <a href="services-details.html" class="thm-btn">
+                                        <span>View Services</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Services One Single -->
+                </div>
+            </div>
+        </section>
+        <!--End Services One-->
+
+
+        <!-- Start Project One -->
+        <div class="project-one">
+            <div class="container">
+                <div class="project-one__top">
+                    <div class="section-title">
+                        <div class="section-title__tagline">
+                            <p>Portfolio</p>
+                            <div class="line2"></div>
+                        </div>
+                        <h2 class="section-title__title">Featured Portfolio</h2>
+                    </div>
+                    <div class="project-one__top-btn">
+                        <a href="projects.html" class="thm-btn">
+                            <span>View All Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-one__inner">
+                    <div class="swiper-container project-one__carousel">
+                        <div class="swiper-wrapper">
+
+                            <!-- Start Single Project One -->
+                            <div class="swiper-slide">
+                                <div class="project-one__single">
+                                    <div class="project-one__single-img-box">
+                                        <div class="project-one__single-img">
+                                            <img src="assets/images/project/project-v1-1.jpg" alt="Image">
+                                            <div class="project-one__single-btn">
+                                                <a href="project-details.html">Live Demo</a>
+                                                <a href="project-details.html">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-one__single-content">
+                                        <div class="project-one__single-text">
+                                            <h3><a href="project-details.html">Social Media Dashboard</a></h3>
+                                            <p>All-in-one social media control</p>
+                                        </div>
+                                        <div class="project-one__single-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <h4 class="color">Project Info</h4>
+                                                </li>
+                                                <li>
+                                                    <h4>Category</h4>
+                                                    <p>Backend Development</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Client</h4>
+                                                    <p>Finance Company</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Start Date</h4>
+                                                    <p>Sep 10, 2025</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Project One -->
+                            <!-- Start Single Project One -->
+                            <div class="swiper-slide">
+                                <div class="project-one__single">
+                                    <div class="project-one__single-img-box">
+                                        <div class="project-one__single-img">
+                                            <img src="assets/images/project/project-v1-2.jpg" alt="Image">
+                                            <div class="project-one__single-btn">
+                                                <a href="project-details.html">Live Demo</a>
+                                                <a href="project-details.html">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-one__single-content">
+                                        <div class="project-one__single-text">
+                                            <h3><a href="project-details.html">Laptop Layout Showcase</a></h3>
+                                            <p>Brand identity refresh for a local business</p>
+                                        </div>
+                                        <div class="project-one__single-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <h4 class="color">Project Info</h4>
+                                                </li>
+                                                <li>
+                                                    <h4>Category</h4>
+                                                    <p>Backend Development</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Client</h4>
+                                                    <p>Finance Company</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Start Date</h4>
+                                                    <p>Sep 10, 2025</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Project One -->
+                            <!-- Start Single Project One -->
+                            <div class="swiper-slide">
+                                <div class="project-one__single">
+                                    <div class="project-one__single-img-box">
+                                        <div class="project-one__single-img">
+                                            <img src="assets/images/project/project-v1-3.jpg" alt="Image">
+                                            <div class="project-one__single-btn">
+                                                <a href="project-details.html">Live Demo</a>
+                                                <a href="project-details.html">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-one__single-content">
+                                        <div class="project-one__single-text">
+                                            <h3><a href="project-details.html">branding mackup design</a></h3>
+                                            <p>Brand identity refresh for a local business</p>
+                                        </div>
+                                        <div class="project-one__single-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <h4 class="color">Project Info</h4>
+                                                </li>
+                                                <li>
+                                                    <h4>Category</h4>
+                                                    <p>Backend Development</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Client</h4>
+                                                    <p>Finance Company</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Start Date</h4>
+                                                    <p>Sep 10, 2025</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Project One -->
+                            <!-- Start Single Project One -->
+                            <div class="swiper-slide">
+                                <div class="project-one__single">
+                                    <div class="project-one__single-img-box">
+                                        <div class="project-one__single-img">
+                                            <img src="assets/images/project/project-v1-4.jpg" alt="Image">
+                                            <div class="project-one__single-btn">
+                                                <a href="project-details.html">Live Demo</a>
+                                                <a href="project-details.html">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-one__single-content">
+                                        <div class="project-one__single-text">
+                                            <h3><a href="project-details.html">Learning Mangement</a></h3>
+                                            <p>Brand identity refresh for a local business</p>
+                                        </div>
+                                        <div class="project-one__single-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <h4 class="color">Project Info</h4>
+                                                </li>
+                                                <li>
+                                                    <h4>Category</h4>
+                                                    <p>Backend Development</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Client</h4>
+                                                    <p>Finance Company</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Start Date</h4>
+                                                    <p>Sep 10, 2025</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Project One -->
+                            <!-- Start Single Project One -->
+                            <div class="swiper-slide">
+                                <div class="project-one__single">
+                                    <div class="project-one__single-img-box">
+                                        <div class="project-one__single-img">
+                                            <img src="assets/images/project/project-v1-5.jpg" alt="Image">
+                                            <div class="project-one__single-btn">
+                                                <a href="project-details.html">Live Demo</a>
+                                                <a href="project-details.html">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-one__single-content">
+                                        <div class="project-one__single-text">
+                                            <h3><a href="project-details.html">Mobile App Design</a></h3>
+                                            <p>Brand identity refresh for a local business</p>
+                                        </div>
+                                        <div class="project-one__single-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <h4 class="color">Project Info</h4>
+                                                </li>
+                                                <li>
+                                                    <h4>Category</h4>
+                                                    <p>Backend Development</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Client</h4>
+                                                    <p>Finance Company</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Start Date</h4>
+                                                    <p>Sep 10, 2025</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Project One -->
+                            <!-- Start Single Project One -->
+                            <div class="swiper-slide">
+                                <div class="project-one__single">
+                                    <div class="project-one__single-img-box">
+                                        <div class="project-one__single-img">
+                                            <img src="assets/images/project/project-v1-6.jpg" alt="Image">
+                                            <div class="project-one__single-btn">
+                                                <a href="project-details.html">Live Demo</a>
+                                                <a href="project-details.html">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-one__single-content">
+                                        <div class="project-one__single-text">
+                                            <h3><a href="project-details.html">Web Site Design</a></h3>
+                                            <p>Brand identity refresh for a local business</p>
+                                        </div>
+                                        <div class="project-one__single-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <h4 class="color">Project Info</h4>
+                                                </li>
+                                                <li>
+                                                    <h4>Category</h4>
+                                                    <p>Backend Development</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Client</h4>
+                                                    <p>Finance Company</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Start Date</h4>
+                                                    <p>Sep 10, 2025</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Project One -->
+                        </div>
+                    </div>
+                    <div class="project-one__nav">
+                        <div class="project-one__nav-prev">
+                            <span><i class="fa fa-solid fa-arrow-left left" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="project-one__nav-next">
+                            <span><i class="fa fa-solid fa-arrow-right right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Project One -->
+
+
+        <!-- Start Resume One -->
+        <section class="resume-one">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline">
+                        <div class="line1"></div>
+                        <p>Resume</p>
+                        <div class="line2"></div>
+                    </div>
+                    <h2 class="section-title__title">Our Resume</h2>
+                </div>
+                <div class="row">
+                    <!-- Start Resume One Single -->
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="resume-one__single">
+                            <div class="resume-one__single-title">
+                                <h2>Education :-</h2>
+                            </div>
+                            <ul class="resume-one__single-list">
+                                <li class="resume-one__single-item">
+                                    <h5>Masteral in Information Technology</h5>
+                                    <p class="one">Udemy / Skillshare / Codecademy — Ongoing</p>
+                                    <p class="two">
+                                        Project-based learning in responsive layout, mobile-first design, and CMS
+                                        platforms like WordPress.
+                                    </p>
+                                </li>
+                                <li class="resume-one__single-item">
+                                    <h5>Computer Processing Systems</h5>
+                                    <p class="one">University of Visual Arts — 2018–2022</p>
+                                    <p class="two">
+                                        Emphasis on design theory, color psychology, branding, and layout
+                                        composition.
+                                    </p>
+                                </li>
+                                <li class="resume-one__single-item">
+                                    <h5>Google UX Design Certificate</h5>
+                                    <p class="one">Coursera – Google Career Certificates — 2023</p>
+                                    <p class="two">
+                                        Learned UX research, wireframing, prototyping, and usability testing with
+                                        real projects.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Resume One Single -->
+                    <!-- Start Resume One Single -->
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="100ms">
+                        <div class="resume-one__single">
+                            <div class="resume-one__single-title">
+                                <h2>Experience :-</h2>
+                            </div>
+                            <ul class="resume-one__single-list">
+                                <li class="resume-one__single-item">
+                                    <h5>Full Stack Developer</h5>
+                                    <p class="one">Udemy / Skillshare / Codecademy — Ongoing</p>
+                                    <p class="two">
+                                        Project-based learning in responsive layout, mobile-first design, and CMS
+                                        platforms like WordPress.
+                                </li>
+                                <li class="resume-one__single-item">
+                                    <h5>Front End Development</h5>
+                                    <p class="one">University of Visual Arts — 2018–2022</p>
+                                    <p class="two">
+                                        Emphasis on design theory, color psychology, branding, and layout
+                                        composition.
+                                    </p>
+                                </li>
+                                <li class="resume-one__single-item">
+                                    <h5>UI/UX Designer</h5>
+                                    <p class="one">Coursera – Google Career Certificates — 2023</p>
+                                    <p class="two">
+                                        Learned UX research, wireframing, prototyping, and usability testing with
+                                        real projects.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Resume One Single -->
+                </div>
+            </div>
+        </section>
+        <!-- End Resume One -->
+
+
+        <!-- End Skills One -->
+        <section class="skills-one">
+            <div class="container">
+                <div class="skills-one__inner">
+                    <div class="section-title text-center">
+                        <div class="section-title__tagline">
+                            <div class="line1"></div>
+                            <p>Skills</p>
+                            <div class="line2"></div>
+                        </div>
+                        <h2 class="section-title__title">Our Skills</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <ul class="skills-one__progress-list list-unstyled">
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>HTML/CSS</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="75%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="75">75</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>Web Design</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner bg count-bar" data-percent="88%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="88">88</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>Javascript</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="60%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="60">60</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>React JS</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner bg count-bar" data-percent="79%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="79">79</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>Wordpress</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="80%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="80">80</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6">
+                            <ul class="skills-one__progress-list list-unstyled">
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>Digital Marketing</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner bg count-bar" data-percent="76%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="76">79</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>UI/UX</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="95%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="95">95</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>Next JS</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner bg count-bar" data-percent="90%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="90">90</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>Kit</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="97%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="97">97</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skills-one__single">
+                                        <div class="skills-one__single-title">
+                                            <h4>CMS</h4>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-inner bg count-bar" data-percent="85%">
+                                                <div class="skill-percent">
+                                                    <span class="count-text" data-speed="3000" data-stop="85">85</span>
+                                                    <span class="percent">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Skills One -->
+
+
+        <!-- Start Brand One -->
+        <section class="brand-one">
+            <div class="container">
+                <div class="brand-one__carousel owl-theme owl-carousel">
+
+                    <!-- Start Single Brand One -->
+                    <div class="item">
+                        <div class="single-brand-one">
+                            <a href="#">
+                                <img src="assets/images/brand/brand-1-1.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Brand One -->
+                    <!-- Start Single Brand One -->
+                    <div class="item">
+                        <div class="single-brand-one">
+                            <a href="#">
+                                <img src="assets/images/brand/brand-1-2.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Brand One -->
+                    <!-- Start Single Brand One -->
+                    <div class="item">
+                        <div class="single-brand-one">
+                            <a href="#">
+                                <img src="assets/images/brand/brand-1-3.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Brand One -->
+                    <!-- Start Single Brand One -->
+                    <div class="item">
+                        <div class="single-brand-one">
+                            <a href="#">
+                                <img src="assets/images/brand/brand-1-4.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Brand One -->
+                    <!-- Start Single Brand One -->
+                    <div class="item">
+                        <div class="single-brand-one">
+                            <a href="#">
+                                <img src="assets/images/brand/brand-1-5.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Brand One -->
+                </div>
+            </div>
+        </section>
+        <!-- End Brand One -->
+
+
+        <!-- Start Faq Two -->
+        <section class="faq-two">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline">
+                        <div class="line1"></div>
+                        <p>Faq</p>
+                        <div class="line2"></div>
+                    </div>
+                    <h2 class="section-title__title">Have any Questions?</h2>
+                </div>
+                <!-- Start Faq Two -->
+                <div class="faq-two__content">
+                    <div class="accrodion-grp faq-two-accrodion" data-grp-name="faq-two-accrodion-1">
+                        <div class="accrodion active">
+                            <div class="accrodion-title">
+                                <h4>Q1. What services do you offer?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>
+                                        I specialize in web design, WordPress development, and front-end solutions.
+                                        I also provide UI/UX design, website optimization, and maintenance support
+                                        for clients looking for long-term collaboration.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Q2. What are your payment terms?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>
+                                        Usually, I require a 50% upfront payment before starting and the remaining
+                                        50% upon project completion. For larger projects, milestone-based payments
+                                        can be arranged.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Q3. How can I get started?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>
+                                        You can contact me through the contact form on my website or email me
+                                        directly. Share your project details, and I’ll get back to you with a free
+                                        quote and timeline.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Q4. What tools and technologies do you use?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>
+                                        I use tools like Figma, Adobe XD, and Photoshop for design. For development,
+                                        I primarily work with WordPress, Elementor, HTML, CSS, JavaScript, and
+                                        Bootstrap.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Faq Two -->
+            </div>
+        </section>
+        <!-- End Faq Two -->
+
+        <!-- Start Blog One -->
+        <section class="blog-one">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline">
+                        <div class="line1"></div>
+                        <p>Blog</p>
+                        <div class="line2"></div>
+                    </div>
+                    <h2 class="section-title__title">Check Out My Articles</h2>
+                </div>
+                <div class="row">
+                    <!-- Start Blog One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img-box">
+                                <div class="blog-one__single-img">
+                                    <img src="assets/images/blog/blog-v1-1.jpg" alt="Image">
+                                </div>
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="blog-one__meta">
+                                    <li>
+                                        <a href="blog-details.html">
+                                            <span class="fas fa-user"></span>Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">
+                                            <span class="fas fa-comments"></span>Comment
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="blog-one__single-content-top">
+                                    <div class="blog-one__single-text-tag">
+                                        <p>Branding</p>
+                                    </div>
+                                    <div class="blog-one__single-content-date">
+                                        <p>Aug 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class="blog-one__single-content-title">
+                                    <h3>
+                                        <a href="blog-details.html">The Tools I Use Daily as a Developer/ Designer</a>
+                                    </h3>
+                                </div>
+                                <div class="blog-one__btn-style1">
+                                    <a href="about.html" class="thm-btn">
+                                        <span> Let’s Start</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog One Single -->
+                    <!-- Start Blog One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img-box">
+                                <div class="blog-one__single-img">
+                                    <img src="assets/images/blog/blog-v1-4.jpg" alt="Image">
+                                </div>
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="blog-one__meta">
+                                    <li>
+                                        <a href="blog-details.html">
+                                            <span class="fas fa-user"></span>Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">
+                                            <span class="fas fa-comments"></span>Comment
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="blog-one__single-content-top">
+                                    <div class="blog-one__single-text-tag">
+                                        <p>Identity</p>
+                                    </div>
+                                    <div class="blog-one__single-content-date">
+                                        <p>Aug 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class="blog-one__single-content-title">
+                                    <h3>
+                                        <a href="blog-details.html">How I Solve Real-World Problems Through Design</a>
+                                    </h3>
+                                </div>
+                                <div class="blog-one__btn-style1">
+                                    <a href="about.html" class="thm-btn">
+                                        <span> Let’s Start</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog One Single -->
+                    <!-- Start Blog One Single -->
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img-box">
+                                <div class="blog-one__single-img">
+                                    <img src="assets/images/blog/blog-v1-6.jpg" alt="Image">
+                                </div>
+                            </div>
+                            <div class="blog-one__single-content">
+                                <ul class="blog-one__meta">
+                                    <li>
+                                        <a href="blog-details.html">
+                                            <span class="fas fa-user"></span>Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">
+                                            <span class="fas fa-comments"></span>Comment
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="blog-one__single-content-top">
+                                    <div class="blog-one__single-text-tag">
+                                        <p>Mobile Apps</p>
+                                    </div>
+                                    <div class="blog-one__single-content-date">
+                                        <p>Aug 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class="blog-one__single-content-title">
+                                    <h3>
+                                        <a href="blog-details.html">How I Balance Creativity With Technical Skills</a>
+                                    </h3>
+                                </div>
+                                <div class="blog-one__btn-style1">
+                                    <a href="about.html" class="thm-btn">
+                                        <span> Let’s Start</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog One Single -->
+                </div>
+            </div>
+        </section>
+        <!-- End Blog One -->
+
+
+        <!-- Start Contact One -->
+        <section class="contact-one">
+            <div class="container">
+                <div class="contact-one__top">
+                    <div class="section-title">
+                        <div class="section-title__tagline">
+                            <p>Contact Me</p>
+                            <div class="line2"></div>
+                        </div>
+                        <h2 class="section-title__title">Get in Touch Now</h2>
+                    </div>
+                    <div class="contact-one__top-text">
+                        <p>Whether it's design, development, or advice, I’m here to help. Send me a note and
+                            let’s start a conversation.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="contact-one__info">
+                            <ul class="contact-one__info-list list-unstyled">
+                                <li>
+                                    <div class="contact-one__info-icon">
+                                        <i class="icon-call"></i>
+                                    </div>
+                                    <div class="contact-one__info-text">
+                                        <p>Have Question ?</p>
+                                        <h3>Free <a href="tel:009211085413">+00 (92110) 85413</a></h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-one__info-icon">
+                                        <i class="icon-envelope"></i>
+                                    </div>
+                                    <div class="contact-one__info-text">
+                                        <p>Write Email</p>
+                                        <h3><a href="mailto:maya.patel@creative.com">maya.patel@creative.com</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-one__info-icon">
+                                        <i class="icon-location"></i>
+                                    </div>
+                                    <div class="contact-one__info-text">
+                                        <p>Our Location</p>
+                                        <h3>88 Broklyn Golden USA</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+                        <div class="contact-one__form">
+                            <form id="contact-one_form" class="contact-form-validated" action="assets/inc/sendemail.php"
+                                method="post" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="contact-one__input-box">
+                                            <input type="text" name="name" placeholder="Name..">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="contact-one__input-box">
+
+                                            <input type="email" name="Email" placeholder="Email..">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="contact-one__input-box">
+                                            <input type="text" name="Phone" placeholder="Phone..">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="contact-one__input-box">
+                                            <div class="select-box">
+                                                <select class="selectmenu wide">
+                                                    <option selected>Select Service</option>
+                                                    <option>UI/UX Design</option>
+                                                    <option>Brand Identity Design</option>
+                                                    <option>Mobile App Design</option>
+                                                    <option>Web Design</option>
+                                                    <option>Digital Product</option>
+                                                    <option>Content Writing</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact-one__input-box">
+                                            <textarea name="message" placeholder="Message.."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-one__btn-box">
+                                    <button type="submit" class="thm-btn">
+                                        <span>Send Message</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact One -->
+
+
+        <!-- Start Social Media One -->
+        <section class="social-media-one">
+            <div class="container">
+                <div class="social-media-one__title text-center">
+                    <h2>follow us</h2>
+                </div>
+                <div class="row">
+                    <!-- Start Social Media One Single -->
+                    <div class="col-xl-2 col-lg-4 col-md-4">
+                        <div class="social-media-one__single">
+                            <div class="social-media-one__single-img">
+                                <img src="assets/images/resources/social-media-v1-1.jpg" alt="Image">
+                                <div class="social-media-one__single-img-text">
+                                    <p>Facebook</p>
+                                    <a href="https://www.facebook.com/">
+                                        www.facebook.com[Your]
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Social Media One Single -->
+                    <!-- Start Social Media One Single -->
+                    <div class="col-xl-2 col-lg-4 col-md-4">
+                        <div class="social-media-one__single">
+                            <div class="social-media-one__single-img">
+                                <img src="assets/images/resources/social-media-v1-2.jpg" alt="Image">
+                                <div class="social-media-one__single-img-text">
+                                    <p>Instagram</p>
+                                    <a href="https://www.instagram.com/">
+                                        www.instagram.com[Your]
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Social Media One Single -->
+                    <!-- Start Social Media One Single -->
+                    <div class="col-xl-2 col-lg-4 col-md-4">
+                        <div class="social-media-one__single">
+                            <div class="social-media-one__single-img">
+                                <img src="assets/images/resources/social-media-v1-3.jpg" alt="Image">
+                                <div class="social-media-one__single-img-text">
+                                    <p>Linkedin</p>
+                                    <a href="https://www.linkedin.com">
+                                        www.linkedin.com[Your]
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Social Media One Single -->
+                    <!-- Start Social Media One Single -->
+                    <div class="col-xl-2 col-lg-4 col-md-4">
+                        <div class="social-media-one__single">
+                            <div class="social-media-one__single-img">
+                                <img src="assets/images/resources/social-media-v1-4.jpg" alt="Image">
+                                <div class="social-media-one__single-img-text">
+                                    <p>Twitter</p>
+                                    <a href="https://x.com/?lang=en">
+                                        //x.com/?lang=en[Your]
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Social Media One Single -->
+                    <!-- Start Social Media One Single -->
+                    <div class="col-xl-2 col-lg-4 col-md-4">
+                        <div class="social-media-one__single">
+                            <div class="social-media-one__single-img">
+                                <img src="assets/images/resources/social-media-v1-5.jpg" alt="Image">
+                                <div class="social-media-one__single-img-text">
+                                    <p>Youtube</p>
+                                    <a href="https://www.youtube.com/">
+                                        www.youtube.com[Your]
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Social Media One Single -->
+                    <!-- Start Social Media One Single -->
+                    <div class="col-xl-2 col-lg-4 col-md-4">
+                        <div class="social-media-one__single">
+                            <div class="social-media-one__single-img">
+                                <img src="assets/images/resources/social-media-v1-6.jpg" alt="Image">
+                                <div class="social-media-one__single-img-text">
+                                    <p>Google</p>
+                                    <a href="https://www.google.com/">
+                                        www.google.com[Your]
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Social Media One Single -->
+                </div>
+            </div>
+        </section>
+        <!-- End Social Media One -->
+
+
+        <!--Site Footer Start-->
+        <footer class="site-footer">
+            <div class="site-footer__pattren"
+                style="background-image: url(assets/images/backgrounds/site-footer-pattren1.jpg);"></div>
+            <div class="site-footer__shape"></div>
+            <div class="site-footer__shape-2"></div>
+            <div class="container">
+                <div class="site-footer__content text-center">
+                    <div class="site-footer__shpae-3"
+                        style="background-image: url(assets/images/shapes/site-footer-shape-3.gif);"></div>
+                    <div class="site-footer__logo">
+                        <div class="site-footer__logo-shape"></div>
+                        <a href="index.html">
+                            <img src="assets/images/resources/logo-1.png" alt="Logo">
+                        </a>
+                        <div class="site-footer__logo-shape"></div>
+                    </div>
+                    <div class="site-footer__contact">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="icon">
+                                    <i class="icon-envelope"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Send your message to my inbox.</p>
+                                    <h4>
+                                        <a class="bdr" href="mailto:alexrivera@creative.com">
+                                            alexrivera@creative.com
+                                        </a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="icon-call"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Let’s talk !</p>
+                                    <h4>
+                                        Free
+                                        <a href="tel:00(92110)85413">
+                                            +00 (92110) 85413
+                                        </a>
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__bottom">
+                        <div class="site-footer__copyright">
+                            <p>
+                                © 2025 Portfolio of <a href="index.html">"MyStory"</a> — All rights
+                                reserved.
+                            </p>
+                        </div>
+                        <div class="site-footer__menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png" width="150"
+                        alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@packageName__.com">needhelp@MyStory.com</a>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <!-- Search Popup -->
+    <div class="search-popup">
+        <div class="color-layer"></div>
+        <button class="close-search"><span class="far fa-times fa-fw"></span></button>
+        <form method="post" action="blog.html">
+            <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search Here" required="">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- End Search Popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+        <span class="scroll-to-top__text"> Go Back Top</span>
+    </a>
+
+
+    <script src="assets/js/jquery-latest.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/marquee.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/gsap/gsap.js"></script>
+    <script src="assets/js/gsap/ScrollTrigger.js"></script>
+    <script src="assets/js/gsap/SplitText.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

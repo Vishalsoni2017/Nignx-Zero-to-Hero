@@ -1,0 +1,62 @@
+Secuirty Headers
+
+1.add_header Strict-Transport-Security "max-age=31536000";
+    security header that forces browsers to use HTTPS only for your site
+    
+    (support HSTS http strict transport Secuirty)
+
+    Without HSTS:
+        A user might first hit http://yourdomain.com 
+        An attacker can intercept (MITM attack)
+
+2. add_header X-Frame-Options DENY; prevent server from iframe content
+                X-Frame-Options "SAMEORIGIN" always;
+                X-Frame-Options "ALLOW-FROM https://yourdomain.com"
+
+3. add_header X-Content-Type-Options "no sniff" always;
+    Browser may treat a .txt file as JS → security risk
+    Tells browser:
+        “Use only the declared Content-Type”
+        Don’t try to guess
+                
+4. add_header X-XSS-Protection "1; mode=block" always;
+    block Cross-Site Scripting (XSS)
+
+5. add_header Referrer-Policy "strict-origin-when-cross-origin" always; recommends
+
+    add_header Referrer-Policy ->how much referrer URL info is sent when users click links.
+     
+    unsafe-url -> Sends full URL everywhere
+
+    no-referrer -> No referrer sent ever
+
+    no-referrer-when-downgrade -> Send referrer only HTTPS → HTTPS
+
+    origin -> send only domain
+    origin-when-cross-origin -> Same origin → full URL
+                              Cross origin → only domain
+    same-origin -> Send only for same site
+    strict-origin -> Send origin only on secure requests
+    strict-origin-when-cross-origin -> Same origin → full URL domain.com/index.html
+                                        Cross origin → only origin domain.com
+                                        HTTPS → HTTP → ❌ no referrer
+
+
+6. add_header  Content-Security-Policy -> HTTP response header that controls what resources a browser is allowed to 
+                                        load (scripts, styles, images, frames, etc.). 
+                                        It’s your strongest defense against XSS, data injection, and clickjacking.
+
+default-src 'self'; Applies to all resource types if not specified
+script-src 'self' https://cdn.example.com; Controls JavaScript sources
+    'self' → same domain
+    'none' → block all
+style-src 'self' https://fonts.googleapis.com;
+img-src 'self' data: allows base64 images
+form-action 'self';
+frame-ancestors 'self' ; Replaces X-Frame-Options
+upgrade-insecure-requests; Converts HTTP → HTTPS automatically
+add connect-src 'self' https://api.unemployengineer.works;
+    controls where your frontend is allowed to make network requests.
+
+7. allow and deny -> ip blocklist and whitelist
+in location block

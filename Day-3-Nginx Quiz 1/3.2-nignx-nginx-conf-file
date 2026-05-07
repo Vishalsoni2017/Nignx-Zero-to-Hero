@@ -1,0 +1,32 @@
+Global Configuration
+    user www-data;: Specifies the user under which the Nginx worker processes will run. www-data is a common user for web servers in Linux.
+    worker_processes auto;: Defines the number of worker processes. auto lets Nginx automatically determine the optimal number based on the CPU cores.
+    pid /run/nginx.pid;: Specifies the file where the process ID (PID) of the Nginx master process is stored.
+    error_log /var/log/nginx/error.log;: Defines the location of the error log file where Nginx logs errors.
+    include /etc/nginx/modules-enabled/*.conf;: Includes additional configuration files for dynamically loaded modules.
+Events Block
+    events {}: Configures settings related to how Nginx handles connections.
+    worker_connections 768;: Specifies the maximum number of simultaneous connections each worker process can handle.
+        # multi_accept on;: (Commented out) If enabled, allows a worker to accept multiple new connections at once.
+HTTP Block
+    http {}: Contains settings for handling HTTP traffic.
+Basic Settings
+    sendfile on;: Enables the sendfile() system call for faster file transfers.
+    tcp_nopush on;: Optimizes the TCP packet flow by sending headers in one packet and data in subsequent packets.
+    types_hash_max_size 2048;: Sets the maximum size of the hash table for MIME types.
+    include /etc/nginx/mime.types;: Includes a file that maps file extensions to MIME types.
+    default_type application/octet-stream;: Sets the default MIME type for files without a defined type.
+    SSL Settings
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;: Specifies the SSL/TLS protocols to use. Older protocols like SSLv3 are excluded for security.
+    ssl_prefer_server_ciphers on;: Ensures the server’s cipher preference is used over the client’s.
+    Logging Settings
+    access_log /var/log/nginx/access.log;: Specifies the file where access logs are stored.
+    Gzip Settings
+    gzip on;: Enables Gzip compression for responses to reduce bandwidth usage.
+    Virtual Host Configurations
+    include /etc/nginx/conf.d/*.conf;: Includes additional configuration files for virtual hosts.
+    include /etc/nginx/sites-enabled/*;: Includes symbolic links to site-specific configurations.
+
+Mail Block (Commented Out)
+    mail {}: (Commented out) Configures Nginx as a mail proxy server. This section is unused in this configuration.
+    This configuration file sets up Nginx with basic settings for HTTP traffic, SSL, logging, and Gzip compression. It also allows for modular configuration by including external files.

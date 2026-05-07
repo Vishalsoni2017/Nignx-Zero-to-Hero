@@ -1,0 +1,37 @@
+gzip in nginx 
+
+gzip on; 
+# Enable gzip compression for responses.
+
+gzip_types text/plain text/css application/json application/javascript text/xml;
+# Specify the MIME types to compress. For example:
+# - text/plain: Compress plain text files.
+# - text/css: Compress CSS files.
+# - application/json: Compress JSON responses.
+# - application/javascript: Compress JavaScript files.
+# - text/xml: Compress XML files.
+
+gzip_min_length 256;
+# Only compress files larger than 256 bytes. For example:
+# - A 100-byte file won't be compressed.
+# - A 300-byte file will be compressed.
+
+gzip_comp_level 5;
+# Set the compression level (1 = fastest, 9 = best compression). 
+# Level 5 is a balance between speed and compression.
+
+gzip_static on;
+# Serve pre-compressed .gz files if available. For example:
+# - If `style.css.gz` exists, it will be served instead of compressing `style.css` on the fly.
+
+gzip_proxied any;
+
+keepalive_timeout 65;
+# Reuse connections for 65 seconds to improve performance.
+
+sendfile on;
+# Enable efficient file transfers. For example:
+# - Static files like images or CSS will be sent faster.
+
+tcp_nopush on;
+# Optimize the TCP stack for sending large files.

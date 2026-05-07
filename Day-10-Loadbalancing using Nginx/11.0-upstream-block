@@ -1,0 +1,18 @@
+# Define an upstream block
+upstream backend_servers {
+    server 192.168.1.101:80;  # Backend server 1
+    server 192.168.1.102:80;  # Backend server 2
+    server 192.168.1.103:80;  # Backend server 3
+}
+
+# Use the upstream block in a server block
+server {
+    listen 80;
+    server_name example.com;
+
+    location / {
+        proxy_pass http://backend_servers;  # Forward requests to the upstream block
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

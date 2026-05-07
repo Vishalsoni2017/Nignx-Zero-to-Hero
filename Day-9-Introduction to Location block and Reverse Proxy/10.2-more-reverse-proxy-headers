@@ -1,0 +1,23 @@
+# Explanation of the timeouts and buffering in Nginx:
+
+proxy_connect_timeout 60s;
+# This sets the maximum time (60 seconds) Nginx will wait while trying to establish a connection to the upstream server.
+# Example: If the upstream server is slow to respond, Nginx will wait up to 60 seconds before giving up.
+
+proxy_read_timeout 60s;
+# This sets the maximum time (60 seconds) Nginx will wait for a response from the upstream server after
+ the connection is established.
+# Example: If the upstream server takes too long to send data, Nginx will wait up to 60 seconds before timing out.
+
+proxy_send_timeout 60s;
+# This sets the maximum time (60 seconds) Nginx will wait while sending data to the upstream server.
+# Example: If Nginx is sending a large request to the upstream server,
+ it will wait up to 60 seconds before timing out.
+
+proxy_buffering on;
+# This enables buffering of responses from the upstream server.
+# Example: If the upstream server sends data in chunks, 
+Nginx will buffer the data before sending it to the client, improving performance for slow clients.
+# Note: You can control the size of the buffer using directives like `proxy_buffer_size` and `proxy_buffers`.
+
+

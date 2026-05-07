@@ -1,0 +1,64 @@
+Geo routing & Traffic Control
+    nginx identified USER location based on IP address & route traffic
+
+1. Basic Geo ip (manuall adding)   2. GeoIP database
+
+1. Basic Geo ip
+# Define a geo block for basic manual IP-based routing
+geo $country {
+    default "OTHER";
+    127.0.0.1 "LOCAL";
+    192.168.1.0/24 "INDIA";
+}
+
+server {
+    listen 80;
+    server_name geo.unemployengineer.works;
+
+    location / {
+        if ($country = "LOCAL") {
+            return 200 "LOCAL";
+        }
+
+        if ($country = "INDIA") {
+            return 200 "INDIA";
+        }
+
+        return 200 "HELLO WORLD";
+    }
+}
+
+2. Real GeoIP database setup
+# Install GeoIP module and database
+# For Ubuntu/Debian:
+# sudo apt-get install geoip-database libnginx-mod-http-geoip
+# For CentOS/RHEL:
+# sudo yum install geoip geoip-devel
+
+# Example using GeoIP database
+http {
+    geoip_country /usr/share/GeoIP/GeoIP.dat;
+
+    server {
+        listen 80;
+        server_name geo.unemployengineer.works;
+
+        location / {
+            set $country_code $geoip_country_code;
+
+            if ($country_code = "US") {
+                return 200 "Hello, User from the United States!";
+            }
+            if ($country_code = "IN") {
+                return 200 "Hello, User from India!";
+            }
+
+            return 200 "Hello, User from an unknown country!";
+        }
+    }
+}
+
+
+
+curl -H "Host: geo.unemployengineer.works" http://127.0.0.1
+“Call my local server BUT pretend the domain is geo.unemployengineer.works”

@@ -1,0 +1,41 @@
+After add record on dns servers 
+A type of Subdomain and IP in value or target column
+
+# Subdomain configuration for dev.unemployengineer.works
+server {
+    listen 80;
+    server_name dev.unemployengineer.works;
+
+    root /var/www/dev.unemployengineer.works/html;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+# Subdomain configuration for stage.unemployengineer.works
+server {
+    listen 80;
+    server_name stage.unemployengineer.works;
+
+    root /var/www/stage.unemployengineer.works/html;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+# Another website example (example.com)
+server {
+    listen 80;
+    server_name example.com www.example.com;
+
+    root /var/www/example.com/html;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}

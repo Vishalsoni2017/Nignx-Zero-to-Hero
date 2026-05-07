@@ -1,0 +1,12 @@
+
+add custom_404.html page is /usr/share/nginx/html
+
+## add line website conf file inside server block
+
+    error_page 404 /custom_404.html;
+    location =/custom_404.html {
+        root /usr/share/nginx/html;
+        internal; #cannot be accessed directly by clients
+    }
+
+# reload nginx service

@@ -1,0 +1,38 @@
+# Assignment: Create Your Own Portfolio Website and Serve It Using Nginx
+
+## Objective:
+The goal of this assignment is to help you understand how to create a simple portfolio website, customize it, and serve it using the Nginx web server.
+
+## Instructions:
+
+1. **Create Your Portfolio Website:**
+    - Design and develop a basic portfolio website using HTML, CSS, and JavaScript.
+    - Include the following sections:
+      - About Me
+      - Projects
+      - Contact Information
+    - Customize the website to reflect your personal style and creativity.
+
+    OR use my github code on practical-code-1 of DAY-5
+
+2. **Set Up Nginx:**
+    - Install Nginx on your local machine or server if not already installed.
+    - Create a new Nginx configuration file to serve your portfolio website.
+
+3. **Nginx Configuration File:**
+    - Create a configuration file (e.g., `portfolio.conf`) with the following details:
+      - Set the root directory to the folder containing your website files.
+      - Configure the server to listen on a specific port (e.g., 8080).
+      - Ensure proper handling of static files like CSS, JavaScript, and images.
+
+4. **Serve Your Website:**
+    - Start the Nginx server and ensure your portfolio website is accessible via the configured port.
+    - Test the website in your browser to verify everything works as expected.
+
+5. **Take Screenshots:**
+    - Take screenshots of the following:
+      - Your portfolio website in the browser.
+      - The Nginx configuration file.
+      - The terminal showing the Nginx server running.
+
+## Example Nginx Configuration File:

@@ -1,0 +1,21 @@
+Webserver: A webserver is a computer or software that stores websites and sends them to users when they request them.
+
+NGINX (pronounced "engine-x"): NGINX is a high-performance, open-source web server, reverse proxy, load balancer, and HTTP cache. Originally created by Igor Sysoev in 2002, it is now one of the most widely-used web servers in the world, powering major sites.
+
+What NGINX Can Do:
+- Serve static websites (HTML, CSS, JS, images)
+- Act as a Reverse Proxy (forward requests to backends)
+- Load Balance traffic across multiple servers
+- Terminate SSL/TLS connections (HTTPS)
+- Cache responses for faster delivery
+- Stream TCP/UDP traffic (databases, Redis)
+- Act as an API Gateway for microservices
+- Rate limit & protect against DDoS / brute-force
+- Geo-route users based on country/IP
+- Serve as a mail proxy (SMTP/IMAP/POP3)
+
+
+NGINX vs Others
+* Apache: NGINX uses event-driven model; Apache uses process/thread-per-request  NGINX handles more concurrency.
+* HAProxy: HAProxy is pure load balancer; NGINX also serves content & SSL
+* API Gateway (Kong/AWS): NGINX can act as lightweight API gateway; commercial ones add auth, analytics etc.

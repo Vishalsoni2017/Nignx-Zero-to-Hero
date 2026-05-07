@@ -1,0 +1,47 @@
+server {
+        server_name student.unemployengineer.works;
+
+         #secuirty headers
+        add_header Strict-Transport-Security "max-age=31536000";
+        add_header X-Frame-Options DENY;
+        add_header X-Content-Type-Options "no sniff" always;
+        add_header  X-XSS-Protection "1; mode=block" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header  Content-Security-Policy "default-src 'self'; script-src 'self';style-src 'self';form-action 'self';frame-ancestors 'self' ;upgrade-insecure-requests;";
+
+
+        location / {
+        root /var/www/student.unemployengineer.works;
+        index login.html;
+        }
+
+        #error page
+        error_page 404 /custom_404.html;
+        location =/custom_404.html {
+        root /usr/share/nginx/html;
+        internal; #cannot be accessed directly by clients
+    }
+
+        error_log /var/log/nginx/student_app_error.log;
+        access_log /var/log/nginx/student_app_access.log;
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/student.unemployengineer.works/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/student.unemployengineer.works/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+server {
+    if ($host = student.unemployengineer.works) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+
+        listen 80;
+        server_name student.unemployengineer.works;
+    return 404; # managed by Certbot
+
+
+}

@@ -1,0 +1,32 @@
+Request Flow & Internal Logic
+
+ **`location` blocks**:
+   - These define how the server should respond to different types of requests.
+
+Request Path
+* http block -> global settings (gzip, logging, caching)
+* server block -> which domain? (server_name)
+* location block -> which content? (URL path matching)
+
+
+   - **`location / {}`**:
+     - Matches all requests starting with `/` (the root path).
+     - Returns a `200 OK` response with the text "Home Page".
+
+   - **`location /api {}`**:
+     - Matches requests starting with `/api`.
+     - Returns a `200 OK` response with the text "API Response".
+
+   - **`location = /exact {}`**:
+     - Matches the exact path `/exact` (highest priority match).
+     - Returns a `200 OK` response with the text "Exact Match".
+
+   - **`location ~ \.php$ {}`**:
+     - Matches requests for files ending in `.php` (regex match).
+     - Forwards the request to a FastCGI server at `127.0.0.1:9000` (commonly used for PHP processing).
+
+ **Priority of `location` blocks**:
+   - Exact matches (`=`) have the highest priority.
+   - Regex matches (`~`) come next.
+   - Prefix matches (like `/` or `/api`) have the lowest priority.
+
